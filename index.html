@@ -1871,8 +1871,8 @@ function isRecent14(ds){return ds&&new Date(ds)>=daysAgo(14);}
    Personal use:  set USE_WORKER = true  (faster, full coverage)
    Office use:    set USE_WORKER = false (direct NVD, auto-retry)
 ─────────────────────────────────────────────────────────────── */
-const USE_BACKEND  = false;                    // ← true after running setup.bat on office server
-const BACKEND_URL  = 'http://localhost:3000';  // ← change to your office PC's IP address
+const USE_BACKEND  = true;                    // ← true after running setup.bat on office server
+const BACKEND_URL  = 'http://192.168.56.1:3000';  // ← change to your office PC's IP address
 const USE_WORKER   = false; // ← true = worker proxy, false = direct NVD
 const WORKER_URL  = 'https://securewatch-proxy.mosycity.workers.dev/nvd';
 const NVD_DIRECT  = 'https://services.nvd.nist.gov/rest/json/cves/2.0';
